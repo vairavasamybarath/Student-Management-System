@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Students</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="main-card">
+        <h2>All Students</h2>
+        <table class="students-table">
+            <tr><th>ID</th><th>Name</th><th>Age</th><th>Grade</th></tr>
+            {% for student in students %}
+            <tr>
+                <td>{{ student[0] }}</td>
+                <td>{{ student[1] }}</td>
+                <td>{{ student[2] }}</td>
+                <td>{{ student[3] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="/">Home</a>
+    </div>
+</body>
+</html>
